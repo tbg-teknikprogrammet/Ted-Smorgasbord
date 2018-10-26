@@ -1,0 +1,34 @@
+@charset utf-8;
+
+body {
+    background-color: darkslategray;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    
+}
+
+.bord {
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    word-break: break-all;
+    align-content: stretch;
+}
+
+.mat {
+    height: 150px;
+    width: 250px;
+    background-color: forestgreen;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+}
