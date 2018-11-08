@@ -21,48 +21,107 @@
 
 // THIS CODE IS WET! Write everything twice
 // Eftersträva att er kod är DRY! Don't Repeat Yourself
-function twinkleTwinkle() {
-    console.log("Blinka lilla stjärna där.");
-    console.log("Blinka lilla stjärna där.");
-    console.log("Hur jag undrar var du är.");
-    console.log("Fjärran lockar du min syn.");
-    console.log("Likt en diamant i skyn.");
+// function twinkleTwinkle() {
+//     console.log("Blinka lilla stjärna där.");
+//     console.log("Blinka lilla stjärna där.");
+//     console.log("Hur jag undrar var du är.");
+//     console.log("Fjärran lockar du min syn.");
+//     console.log("Likt en diamant i skyn.");
+// }
+
+// // Call a function
+// twinkleTwinkle();
+// twinkleTwinkle();
+// twinkleTwinkle();
+
+// // Deklerera en funktion
+// function doSomething() {
+//     console.log(" ");
+//     console.log("Hello World!");
+//     console.log("I'm doing something...")
+// }
+
+// // Anropa funktionen
+// doSomething();
+// // Visar innehållet i funktionen
+// doSomething
+
+// // Parameter och Argument
+// function square(num, num1) {
+//     console.log(num * num1)
+// }
+
+// // Anropar funktionen med två stycken argument
+// square(0.5, 10);
+
+// function sayHello(name) {
+//     console.log("Hello there!  " + name);
+// }
+
+// // Anropar funktionen med ett argument, i form av en string
+// sayHello("General Kenobi.");
+
+// function area(lenght, height) {
+//     console.log("The area of: " + lenght + " and " + height + " is: " + lenght * height);
+// }
+
+// area(5, 10)
+
+// function greet(person1, person2, person3, person4) {
+//     console.log("Hej, " + person1 + "!")
+//     console.log("Hej, " + person2 + "!")
+//     console.log("Hej, " + person3 + "!")
+//     console.log("Hej, " + person4 + "!")
+// }
+
+// Greet("Boi", "Man", "Tomsson", "Beaver")
+
+// function squared(x) {
+//     return x * x;
+// }
+
+// console.log("4 squared is: " + square(4))
+
+// var result = squared(10);
+// console.log(result);
+
+/*
+******************************
+functions - skriftligt test
+******************************
+*/
+
+// function isEven(yeet) {
+//     if(yeet % 2 === 0) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+// console.log(isEven(54));
+
+// function kebabToSnake(papa) {
+//     var yeet = papa.replace(/ wanna be /g, " am already ")
+//     return yeet;
+// }
+
+// kebabToSnake("I wanna be Tracer")
+
+function localScope() {
+    var showScore = 31;
+    console.log(showScope);
 }
 
-// Call a function
-twinkleTwinkle();
-twinkleTwinkle();
-twinkleTwinkle();
+localScope();
+console.log(showScope);
 
-// Deklerera en funktion
-function doSomething() {
-    console.log(" ");
-    console.log("Hello World!");
-    console.log("I'm doing something...")
+var showScopeY = 99;
+function localScopeY() {
+    showScopeY = 100;
+    console.log(showScopeY);
 }
 
-// Anropa funktionen
-doSomething();
-// Visar innehållet i funktionen
-doSomething
-
-// Parameter och Argument
-function square(num, num1) {
-    console.log(num * num1)
-}
-
-// Anropar funktionen med två stycken argument
-square(0.5, 10);
-
-function sayHello(name) {
-    console.log("Hello there!  " + name);
-}
-
-// Anropar funktionen med ett argument, i form av en string
-sayHello("General Kenobi.");
-
-function area(lenght, height) {
-    console.log("The area of: " + lenght + " and " + height + " is: " + lenght * height);
-}
-
-area(5, 10)
+console.log(showScopeY);
+localScopeY();
