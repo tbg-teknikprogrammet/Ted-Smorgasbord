@@ -29,7 +29,7 @@
 //     console.log("Likt en diamant i skyn.");
 // }
 
-// // Call a function
+// // // Call a function
 // twinkleTwinkle();
 // twinkleTwinkle();
 // twinkleTwinkle();
@@ -109,19 +109,47 @@ functions - skriftligt test
 
 // kebabToSnake("I wanna be Tracer")
 
-function localScope() {
-    var showScore = 31;
-    console.log(showScope);
+// function localScope() {
+//     var showScore = 31;
+//     console.log(showScope);
+// }
+
+// localScope();
+// console.log(showScope);
+
+// var showScopeY = 99;
+// function localScopeY() {
+//     showScopeY = 100;
+//     console.log(showScopeY);
+// }
+
+// console.log(showScopeY);
+// localScopeY();
+
+function sing() {
+    console.log("I'm singing in the rain!");
+console.log("I do not know the lyrics!");
 }
 
-localScope();
-console.log(showScope);
+// setInterval(sing, 3000);
 
-var showScopeY = 99;
-function localScopeY() {
-    showScopeY = 100;
-    console.log(showScopeY);
+// var anom = setInterval(function() {
+//     console.log("I'm an anonymous function!")
+// }, 1);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("output").innerHTML = d.toLocaleTimeString();
 }
 
-console.log(showScopeY);
-localScopeY();
+myTimer();
+
+var myTime = setInterval(myTimer, 1000);
+
+document.getElementsByTagName("button")[0].addEventListener("mouseenter", function() {
+    clearInterval(myTime);
+});
+
+document.querySelector("button").addEventListener("mouseleave", function() {
+    myTime = setInterval(myTimer, 1000)
+});
