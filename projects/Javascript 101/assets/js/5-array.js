@@ -53,13 +53,45 @@
 
 // countries.forEach(countryList);
 
-var things = ["T", "N", "A", "P", "D"];
-console.log(things);
+// var things = ["T", "N", "A", "P", "D"];
+// console.log(things);
 
-function printReverse(things) {
-    for(var i = things.length -1; i >= 0; i--) {
-        console.log(things[i]);
+// function printReverse(things) {
+//     for(var i = things.length -1; i >= 0; i--) {
+//         console.log(things[i]);
+//     }
+// }
+
+
+// printReverse(things);
+
+// function isIdentical(numbers) {
+//     var check = 0;
+//     for(var i = 0; i <= numbers.length-1; i++) {
+//         if(numbers[0] == numbers[i]) {
+//             check = 1;
+//         }
+//         else {
+//             console.log("Whoopsie.")
+//             return false
+//         }
+//     }
+
+//     if(check == 1) {
+//         console.log("Victory royale.");
+//         return true;
+//     }
+// }
+
+// isIdentical([1,1,1,1]);
+
+function stack(numbers) {
+    var a = 0;
+    for(var i = 0; i <= numbers.length-1; i++){
+        a += numbers[i];
     }
+    console.log([a]);
+    return a;
 }
 
-printReverse(things);
+stack([1,2,10])
