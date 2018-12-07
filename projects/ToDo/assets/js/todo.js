@@ -9,23 +9,24 @@ document.getElementById("button").addEventListener("click", toDo)
 var net = []
 
 function toDo() {
-    var command = prompt("Please give a valid command");
     while (command != "quit") {
         console.log(command)
-        if (command == "del"){
-            console.log("");
+        if (command == "delete"){
+            command = prompt("Which index do you want to delete?")
+            net.splice(command , 1);
+            console.log("Deleted " + command);
         }
         else if(command == "list"){
-            console.log(net);
-            for(var i = 0; i < net.lenght, i++;) {
-                console.log("(" + i + ")" + command[i]);
+            for(var i = 0; i < net.length; i++) {
+                console.log("(" + i + ")" + net[i]);
             }
         }
         else if(command == "new"){
             command = prompt("Vad vill du?");
-            console.log("Saved" + command + ". Very nice")
+            console.log("Saved " + command + ". Very nice")
             net.push(command);
-        } // Command ska skrivas in efter
+        }
+        var command = prompt("Please give a valid command");
     }
-    console.log("See ya!")
+    console.log("See ya!") // So long space cowboy
 }
