@@ -100,3 +100,21 @@ console.log(posts[1].comments[0]);
 for(var i = 0; i < posts.length; i++) {
     console.log(posts[i].title, posts[i].author, posts[i].comments,);
 }
+
+var moviereview = [
+    {
+        title: "Rackartyg i Malå",
+        rating: "95",
+        seen: "Yes"
+    },
+    {
+        title: "Lost in Asia",
+        rating: "75",
+        seen: "No"
+    },
+    {
+        title: "Oshiri taberu jin",
+        rating: "100",
+        seen: "Yes"
+    },
+];
