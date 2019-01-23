@@ -128,7 +128,7 @@ functions - skriftligt test
 
 function sing() {
     console.log("I'm singing in the rain!");
-console.log("I do not know the lyrics!");
+    console.log("I do not know the lyrics!");
 }
 
 // setInterval(sing, 3000);

@@ -129,10 +129,28 @@ var moviereview = [
     },
 ];
 
-for(var i = 0; i <= moviereview.length-1; i++) {
-    if(moviereview[i].seen == true){
-        console.log("You have seen " + moviereview[i].title + " - " + moviereview[i].rating + " points")
+// for(var i = 0; i <= moviereview.length-1; i++) {
+//     if(moviereview[i].seen == true){
+//         console.log("You have seen " + moviereview[i].title + " - " + moviereview[i].rating + " points")
+//     }
+//     else
+//         console.log("You have not seen " + moviereview[i].title + " - " + moviereview[i].rating + " points");
+// }
+
+function watchCheck(moviereview) {
+    if(moviereview.seen == true) {
+        console.log("You have seen " + moviereview.title + " - " + moviereview.rating + " points");
     }
     else
-        console.log("You have not seen " + moviereview[i].title + " - " + moviereview[i].rating + " points");
+        console.log("You have not seen " + moviereview.title + " - " + moviereview.rating + " points");
 }
+
+moviereview.forEach(watchCheck);
+
+// moviereview.forEach(function(film) {
+//     if(film.seen == true) {
+//         console.log("You have seen " + film.title + " - " + film.rating + " points")
+//     }
+//     else
+//         console.log("You have not seen " + film.title + " - " + film.rating + " points");
+// });
