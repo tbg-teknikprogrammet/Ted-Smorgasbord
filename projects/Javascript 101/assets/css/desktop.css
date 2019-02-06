@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+
+}
+
+.some-class {
+    color: orange;
+    letter-spacing: 2px;
+    transform: rotate(180deg);
+    font-style: oblique;
+}
+
+.another-class {
+    color: red;
+    letter-spacing: 2px;
+    transform: rotate(180deg);
+    font-style: oblique;
+}
