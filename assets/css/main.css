@@ -25,9 +25,19 @@ main {
 .mat {
     height: 150px;
     width: 250px;
-    background-color: forestgreen;
+    background-color: rgb(59, 129, 129);
     text-decoration: none;
     color: black;
     text-align: center;
     border-radius: 10px;
+    transition: all 0.1s;
+}
+
+.mat:hover {
+    background-size: cover;
+    transform: scale(1.01);
+}
+
+.title {
+    color: rgb(23, 199, 199);
 }
