@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 body, html {
     height: 100%;
     margin: 0;
@@ -51,4 +50,8 @@ main {
 
 .twenty {
 
+}
+
+.slideshow {
+    
 }
