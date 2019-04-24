@@ -21,14 +21,13 @@ main {
 }
 
 .jave {
-    background: darkblue;
     border: 2px solid black;
     display: flex;
     align-items: center;
 }
 
 .dang {
-    
+    background: darkblue;
 }
 
 .stepbro {
@@ -48,10 +47,8 @@ main {
     align-items: center;
 }
 
-.twenty {
-
-}
-
-.slideshow {
-    
+.dash {
+    display: flex;
+    flex-flow: column;
+    color: white;
 }

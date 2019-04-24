@@ -17,7 +17,7 @@ document.querySelector("#light").addEventListener("click", function() {
     document.querySelector("#light").style.visibility = "hidden"
 })
 
-var slidin = ["assets/images/Sneaky.jpg", "assets/images/rarara.jpg", "assets/images/hot.jpg"]
+var slidin = ["assets/images/Isak.png", "assets/images/Isak.png", "assets/images/Isak.png"]
 
 var slideIndex = 0;
 
@@ -37,4 +37,18 @@ document.querySelector("#gosh").addEventListener("click", function() {
         slideIndex = slidin.length-1;
     }
     document.querySelector("#slide").setAttribute("src", slidin[slideIndex])
+})
+
+document.addEventListener("keydown", function(event){
+    if(event.which == 78) {
+        document.querySelector(".dang").style.background = "red";
+    }
+    else if(event.which == 76) {
+        document.querySelector(".dang").style.background = "lime";
+    }
+    else if(event.which == 67) {
+    }
+    else {
+        console.log("Oi")
+    }
 })
