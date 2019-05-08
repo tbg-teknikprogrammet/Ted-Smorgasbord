@@ -24,6 +24,7 @@ main {
     border: 2px solid black;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .dang {
@@ -47,7 +48,7 @@ main {
     align-items: center;
 }
 
-.dash {
+.box3 {
     display: flex;
     flex-flow: column;
     color: white;
