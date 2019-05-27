@@ -1,4 +1,5 @@
-//Box 1: Lightshow, when you click the image the image gets bigger
+//Box 1: Lightshow, when you click the image the image gets bigger.
+//I had to use visibility: hidden On items that had positions: absolute to make them disapear.
 
 var darkmode = document.querySelector("#dark");
 var lightmode = document.querySelector("#light");
@@ -24,6 +25,7 @@ lightmode.addEventListener("click", function() {
 
 
 //Box 2: A slideshow, click an arrow and see the image change.
+//Not too much can be said about this, it changes picture when the index value changes
 
 var slide = document.querySelector("#slide");
 var backTrack = document.querySelector(".back");
@@ -51,12 +53,12 @@ forwTrack.addEventListener("click", function() {
 
 // Box 3: Listens for specific button presses and changes the colors of the page
 
-var javaEbox = document.querySelectorAll(".jave");
-var hawkeye = document.querySelectorAll(".arrow")
-var i;
+var javaEbox = document.querySelectorAll(".jave");  //I made it so the colors of the page would invert
+var hawkeye = document.querySelectorAll(".arrow")   //from black and white to white and black.
+var i;                                              //Also jave stands for Javascript Electronic box
 
 document.addEventListener("keydown", function(event){
-    if(event.which == 78) {
+    if(event.which == 78) {                             //I found the keycode for all buttons on a site
         var x = javaEbox;
         for (i = 0; i < x.length; i++) {
             x[i].style.borderColor = "white";
@@ -104,8 +106,8 @@ document.addEventListener("keydown", function(event){
 var points = 0;
 
 clicky.addEventListener("click", function(){
-    var left = Math.random() * (+191 - -191) + -191;
-    var top = Math.random() * (+121 - -121) + -121;
+    var left = Math.random() * (+150 - -150) + -150; //Used some math to get a random margin
+    var top = Math.random() * (+110 - -110) + -110;  //Between margin-left: 191 and margin-left -191 were used
     clicky.style.marginLeft = left + "px";
     clicky.style.marginTop = top + "px";
     points += 1;
@@ -131,8 +133,8 @@ var volPercent = document.querySelector("#percent");
 var umute = document.querySelector("#mute");
 var go = 0;
 video.volume = 0.2;
-vol = 20;
-
+vol = 20;                                   //I used vol to go together with the volume so it was
+                                            //easier to print out what volume it was on the site.
 document.querySelector("#percent").innerHTML = " " + vol + "% "
 plapau.addEventListener("click", function(){
     if(go == 0){
@@ -150,19 +152,19 @@ playback.addEventListener("click", function(){
     video.currentTime = 0;
 })
 goBack.addEventListener("click", function(){
-    video.currentTime = video.currentTime - 5;
+    video.currentTime += -5;
 })
 goForward.addEventListener("click", function(){
-    video.currentTime = video.currentTime + 5;
+    video.currentTime += 5;
 })
-plus.addEventListener("click", function(){
-    video.volume = video.volume + 0.05;
-    vol = vol + 5;
-    volPercent.innerHTML = vol + "%";
+plus.addEventListener("click", function(){  //I could have used an input-range to change volume
+    video.volume = video.volume + 0.05;     //and put an oninput to change the value.
+    vol += 5;                          //But I was already done with the buttons
+    volPercent.innerHTML = vol + "%";       //and there is not time left so I will leave it like this now.
 })
 minus.addEventListener("click", function(){
     video.volume = video.volume - 0.05;
-    vol = vol - 5;
+    vol += -5;
     volPercent.innerHTML = vol + "%";
 })
 umute.addEventListener("click", function(){
