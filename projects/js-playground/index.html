@@ -9,21 +9,55 @@
 </head>
 <body>
     <section id="light">
-        <img class="twenty" src="assets/images/Isak.png" alt="">
+        <img class="twenty" src="assets/images/hole.jpg" alt="">
     </section>
-    <main class="dang">
+    <main>
         <section class="jave box1">
-            <img id="stepbro" src="assets/images/Isak.png" alt="">
+            <img id="dark" src="assets/images/hole.jpg" alt="">
         </section>
         <section class="jave box2">
-            <h1 id="gosh">1</h1>
+            <h1 class="arrow back">🡄</h1>
             <img id="slide" src="" alt="">
-            <h1 id="darnit">2</h1>
+            <h1 class="arrow forw">🡆</h1>
         </section>
-        <section class="jave box3"><h1>Nightmode = N</h1><h1>Bluemode = B</h1><h1>Coolmode = C</h1></section>
-        <section class="jave box4"><button>Click me Gayjin</button></section>
-        <section class="jave box5">5</section>
-        <section class="jave box6">6</section>
+        <section class="jave box3">
+            <h1>Brightmode = B</h1>
+            <h1>Nightmode = N</h1>
+        </section>
+        <section class="jave box4">
+            <h5 class="clickcount"></h5>
+            <h3 class="win">You have won! Well played!</h3>
+            <button class="click">Clicky</button>
+        </section>
+        <section class="jave box5">
+            <video id="cyber" src="assets/videos/cyberpunk.mp4"></video>
+            <section id="controls1">
+                <button id="rewind">Back to start</button>
+                <button id="b">🡄 5 Seconds</button>
+                <button id="play">Play</button>
+                <button id="f">5 Seconds 🡆</button>
+            </section>
+            <section id="controls2">
+                <button id="mute">Mute</button>
+                <button id="minus">Volume-</button>
+                <p id="percent"></p>
+                <button id="plus">Volume+</button>
+            </section>
+        </section>
+        <section id="scorekeeper" class="jave box6">
+            <h1 class="pocket">Scorekeeper pocket edition.</h1>
+            <h1>First to <input type="number" min="1" max="9"> Points wins!</h1>
+            <section class="players">
+                <h1 class="score"><span id="points1">0</span></h1>
+                <h1 class="pointers">🡄</h1>
+                <button id="player1">Player 1</button>
+                <button id="reset">Reset</button>
+                <button id="player2">Player 2</button>
+                <h1 class="pointers">🡆</h1>
+                <h1 class="score"><span id="points2">0</span></h1>
+            </section>
+            <h1 id="winner"></h1>
+        </section>
     </main>
     <script src="assets/js/js-playground.js"></script>
 </body>

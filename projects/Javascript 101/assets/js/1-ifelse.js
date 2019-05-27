@@ -1,4 +1,4 @@
-// alert("Suck yoo mom");
+// alert("Oi");
 // var name = "Ted"; // String
 // var age = 19; //Number
 // // == Jämför men kollar inte datatyp

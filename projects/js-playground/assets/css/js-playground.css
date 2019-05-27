@@ -2,15 +2,9 @@
 
 body, html {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: #c21500;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-height: 100%;
 }
 
 main {
@@ -18,6 +12,11 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     min-height: 100%;
+    min-width: 100%;
+}
+
+p {
+    margin: 0;
 }
 
 .jave {
@@ -27,16 +26,10 @@ main {
     justify-content: center;
 }
 
-.dang {
-    background: darkblue;
+#dark {
+    width: 100%;
+    height: 100%;
 }
-
-.stepbro {
-}
-
-/* .stepbro:hover {
-    transform: rotate(360deg);
-} */
 
 #light {
     visibility: hidden;
@@ -46,10 +39,133 @@ main {
     position: absolute;
     justify-content: center;
     align-items: center;
+    background-color: black;
+}
+
+#slide {
+    width: 100%;
+    height: 100%;
+}
+
+.box2 h1 {
+    user-select: none;
+    position: absolute;
+}
+
+.arrow {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.back {
+    margin-left: -180px;
+}
+
+.forw {
+    margin-left: 180px;
 }
 
 .box3 {
     display: flex;
     flex-flow: column;
-    color: white;
+    font-size: 30px;
+}
+
+.box4 {
+    display: flex;
+    flex-flow: column;
+}
+
+.click {
+    position: absolute;
+}
+
+.win {
+    visibility: hidden;
+}
+
+.box5 {
+    display: flex;
+    flex-flow: column;
+}
+
+#cyber {
+    height: 200px;
+    border-radius: 10px;
+}
+
+#controls1 {
+    display: flex;
+    flex-flow: row;
+}
+
+#play {
+    width: 60px;
+}
+
+#mute {
+    width: 70px;
+}
+
+#percent {
+    margin: 5px;
+    width: 30px;
+}
+
+#controls2 {
+    display: flex;
+    flex-flow: row;
+}
+
+.box6 {
+    display: flex;
+    flex-flow: column;
+}
+
+.players {
+    display: flex;
+    flex-flow: row;
+}
+
+.score {
+    margin: 0;
+    font-size: 25px;
+}
+
+.pointers {
+    margin: 0;
+}
+
+.winner {
+    visibility: hidden;
+}
+
+.pocket {
+    margin-bottom: 0px;
+}
+
+#winner {
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: chartreuse;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1000px){
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+    .jave {
+        height: 300px;
+    }
+    .back {
+        margin-left: -100px;
+    }
+    .forw {
+        margin-left: 100px;
+    }
 }

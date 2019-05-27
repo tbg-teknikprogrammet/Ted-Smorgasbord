@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="assets/css/scorekeeper.css">
+</head>
+<body>
+    <main class="scorekeeper">
+        <h1>Scorekeeper v1.0</h1>
+        <section class="toWin">
+            <h1>First to <input type="number" min="1" max="9"> Points wins!</h1>
+        </section>
+        <section class="players">
+            <h1 class="score"><span id="points1">0</span></h1>
+            <h1 class="arrow">🡄</h1>
+            <button id="player1">Player 1</button>
+            <button id="reset">Reset</button>
+            <button id="player2">Player 2</button>
+            <h1 class="arrow">🡆</h1>
+            <h1 class="score"><span id="points2">0</span></h1>
+        </section>
+        <h1 id="winner"></h1>
+        <h4 id="disclaimer">Please choose how many points to win</h4>
+    </main>
+    <script src="assets/js/scorekeeper-DOM.js"></script>
+</body>
+</html

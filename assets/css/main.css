@@ -9,35 +9,45 @@ header {
 }
 
 main {
-    display: grid;    
+    display: grid;
 }
 
 .bord {
     height: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
     word-break: break-all;
     align-content: stretch;
 }
 
 .mat {
-    height: 150px;
-    width: 250px;
-    background-color: rgb(59, 129, 129);
+    height: 200px;
+    width: 400px;
+    background-color: rgb(26, 66, 66);
     text-decoration: none;
-    color: black;
+    color: rgb(23, 199, 199);
     text-align: center;
     border-radius: 10px;
     transition: all 0.1s;
+    font-size: 50px;
 }
 
 .mat:hover {
-    background-size: cover;
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .title {
     color: rgb(23, 199, 199);
+}
+
+@media screen and (max-width: 550px){
+    .bord {
+        display: flex;
+        flex-flow: column;
+    }    
+    .mat {
+        margin-bottom: 10px;
+    }
 }
